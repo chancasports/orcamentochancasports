@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: hsl(0, 0%, 0%);
+    position: relative;
+    /* Adicione a imagem de fundo */
+    background-image: url(IMAGENS/FUNDO.jpeg); /* Substitua com o caminho correto */
+    background-size: cover; /* Para cobrir todo o espaço disponível */
+    background-position: center; /* Para centralizar a imagem */
+}
+
+.fixed-text1 {
+    position:absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(194, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 400px;
+    width: 900px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.fixed-text2 {
+    position:absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 400px;
+    width: 900px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.fixed-text3 {
+    position:absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 400px;
+    width: 900px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.fixed-text4 {
+    position:absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(194, 0, 0);
+    color: rgb(255, 225, 0);
+    padding: 10px;
+    border-radius: 400px;
+    width: 400px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.display-container {
+    text-align: center;
+    margin-top: 130px; /* SKDSKDKS */
+}
+
+.display {
+    background-color: rgb(184, 0, 0);
+    color: white;
+    padding: 7px;
+    font-size: 24px;
+    width: 300px;
+    border-radius: 0px;
+    margin-top: 150px;
+}
+
+#resetDisplayButton {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#resetDisplayButton:hover {
+    background-color: #023aa1;
+}
+
+.flash {
+    animation: flash 0.3s ease-in-out;
+    animation: flash 0.3s ease-in-out;
+    animation: flash 0.3s ease-in-out;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.blocks-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px;  
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */  
+    
+}
+
+
+
+.left-blocks, .right-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+
+   
+    
+}
+
+.block {
+    text-align: center;
+    width: 200px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 1px;
+}
+
+.block-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px;
+}
+
+.value-button {
+    display: block;
+    width: 100%;
+    background-color: #ffe600;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 2px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.value-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.value-button.selected {
+    background-color: red;
+}
+
+.value-button:hover {
+    background-color: #0056b3;
+}
+
+.resetButtonsBlock {
+    background-color: #bd0013;
+    color: white;
+    border: none;
+    padding: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.resetButtonsBlock:hover {
+    background-color: #001fb7;
+}
+
+.center-image1 {
+    text-align: center;
+    margin-top: -1500px;
+}
+
+.center-image1 img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.center-image2 {
+    text-align: center;
+    margin-top: 500px;
+}
+
+.center-image2 img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: -1; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.center-image3 {
+    position: relative;
+    margin-top: 60px;
+    left: 100px;
+}
+
+.center-image3 img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: -1; /* Certifique-se que o texto esteja acima de outros elementos */
+}
+
+.button-block {
+    display: table-column;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: -40px;
+    position: relative;
+    left: 140px;
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+    
+}
+
+.link-button {
+    padding: 5px;
+    background-color: #c50606;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Certifique-se que o texto esteja acima de outros elementos */
+    margin: 0px;
+   
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
